@@ -66,7 +66,7 @@ svg.append("text")
     .text("Impact Percapita GDP & Inequality on Mortality !");
 
 rect = svg.append('rect').transition().duration(500).attr('width', 250)
-                .attr('height', 50)
+                .attr('height', 70)
                 .attr('x', 40)
                 .attr('y', 10)
                 .style('fill', 'white')
@@ -82,6 +82,10 @@ text = svg.append('text').text('Red color indicates higher mortality')
                 .attr('y', 45)
                 .attr('fill', 'black')
 
+text = svg.append('text').text('Size of circle indicates Total deaths')
+                .attr('x', 50)
+                .attr('y', 60)
+                .attr('fill', 'black')
 
 
 
@@ -174,6 +178,10 @@ var tooltip = d3.select("#my_dataviz")
 });
 </script>
 <body>
+<b> The chart depicts the impact of Percapita GDP and Inequality on mortality. 
+<br>Higher GINI index means higher inequality, as we can observe while the impact on Mortality is not very clear, countries with higher inequality do seem to have higher number of deaths(bigger circles.).</b>
+<br>
+</b>
     <button onclick="window.location.href='https://sowjanyabhupathiraju.github.io/covidmortalityp3/';">
       Back
     </button>
